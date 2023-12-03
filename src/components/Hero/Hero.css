@@ -1,0 +1,27 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 4rem 0;
+}
+
+.hero-content {
+  display: flex;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-right {
+  display: flex;
+}
+
+.hero-right img {
+  margin: auto;
+
+  width: 70%;
+}
