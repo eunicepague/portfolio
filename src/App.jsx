@@ -3,7 +3,7 @@ import About from './components/About/About';
 import Tech from './components/Techstack/Tech';
 import Achievement from './components/Achievement/Achievement';
 
-import Services from './components/Services/services';
+// import Services from './components/Services/services';
 import Proj from './components/Projects/Proj';
 
 import './App.css';
