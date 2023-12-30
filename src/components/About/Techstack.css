@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.tech-container {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 60vh;
+
+  /* background-image: url('./../../assets/zebra.png'); */
+  /* margin-top: 5rem; */
+}
+
+.tech-content {
+  display: flex;
+  width: 90%;
+  background-color: white;
+}
+
+.tech-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(153, 166, 254);
+
+  background-image: url('./../../assets/zebra.png');
+}
+
+#tech-intro {
+  padding: 5rem 5rem;
+  background-color: white;
+  border-radius: 20px;
+
+  -webkit-box-shadow: 0 19.5px 32px -11px #6c6c6c;
+  -moz-box-shadow: 0 19.5px 32px -11px #6c6c6c;
+  box-shadow: 0 19.5px 32px -11px #6c6c6c;
+}
+
+.tech-left p {
+  margin-bottom: 2rem;
+  font-size: calc(1rem + 3vw);
+  font-weight: bold;
+  text-align: center;
+}
+
+.tech-img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tech-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tech-right img {
+  width: 5rem;
+}
+
+@media (max-width: 768px) {
+  .tech-right img {
+    width: 5rem;
+  }
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* color: #e8bd46 */
+/* color: #D73D57 */
+/* color: #99a6fe */
+.proj-container {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 7rem 0;
+}
+
+.proj-container p {
+  margin: 0;
+  /* background-color: #e8adbb; */
+  /* background-color: #303030; */
+}
+
+.proj-content {
+  width: 90%;
+}
+
+.proj-intro {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.proj-intro h1 {
+  font-weight: bold;
+  color: rgb(153, 166, 254);
+}
+.project-container {
+  margin-bottom: 5rem;
+}
+
+.proj-img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.proj-img-content h3 {
+  font-weight: bold;
+}
+
+.proj-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.proj-img img {
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+}
+
+.proj-btn-content {
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+}
+
+.skill-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.skill-set button {
+  background-color: rgb(222, 159, 226);
+  border-color: transparent;
+  border-radius: 13px;
+}
+
+/* button -------------------------------------------------------*/
+
+#project-button {
+  --primary-color: #d73d57;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+#project-button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+#project-button .arrow::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+#project-button:hover {
+  background-color: var(--hover-color);
+}
+
+#project-button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+#project-button:hover .arrow:before {
+  right: 0;
+}

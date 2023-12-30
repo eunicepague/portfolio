@@ -1,0 +1,61 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.achievement-container {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 30vh;
+  margin-top: 7rem;
+}
+
+.achievement-content {
+  display: flex;
+  width: 90%;
+  background-color: white;
+}
+
+.achievement-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* #achievement-intro {
+  padding: 4rem;
+  background-color: white;
+
+  -webkit-box-shadow: 0 19.5px 32px -11px #6c6c6c;
+  -moz-box-shadow: 0 19.5px 32px -11px #6c6c6c;
+  box-shadow: 0 19.5px 32px -11px #6c6c6c;
+} */
+
+/* .achievement-left p {
+  margin-bottom: 2rem;
+  font-size: calc(1rem + 3vw);
+  font-weight: bold;
+  text-align: center;
+}
+
+.achievement-right {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.achievement-right p {
+  font-weight: 500;
+  font-size: calc(10px + 0.5vw);
+}
+
+@media (max-width: 1024px) {
+  #achievement-intro {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-right img {
+    width: 5rem;
+  }
+} */

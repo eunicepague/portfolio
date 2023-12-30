@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+.landing-container {
+  display: flex;
+  background-color: #fdfdfd;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('./../../assets/landing.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-color: rgb(44, 44, 68); */
+
+  /* background-size: 800px; */
+}
+
+.landing-content {
+  display: flex;
+  width: 100%;
+}
+
+.landing-left {
+  display: flex;
+  /* margin-left: 3%; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+#landing-intro {
+  margin-left: 10rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6a6a6a;
+  -webkit-text-stroke-color: #4f4f4f;
+  -webkit-text-stroke-width: 0.5px;
+}
+
+#landing-name {
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: #1a0e0e;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #1a0e0e;
+}
+#surname {
+  /* color: #f7f7f7; */
+  /* color: rgb(254, 254, 114); */
+  /* color: #d676ff; */
+  /* color: #ff7f51; */
+  /* color: #a0e4ff; */
+  color: #49c5f6;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #1a0e0e;
+}
+
+/* #-#-#-#-#-#- RIGHT SIDE #-#-#-#-#-#-# */
+
+.landing-right {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#landing-right-container {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+#landing-right-btn {
+  display: flex;
+  /* margin-right: 4rem; */
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 100%;
+}
+
+#landing-right-btn button {
+  transition: all 0.3s ease; /* add this line */
+
+  display: flex;
+  justify-content: center;
+
+  margin-right: 7rem;
+  padding: 1%;
+  width: 40%;
+  gap: 2rem;
+
+  margin-left: auto;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  background: #eaeaea;
+  background: -webkit-linear-gradient(85deg, #eaeaea 0%, #ffffff 100%);
+  background: linear-gradient(85deg, #eaeaea 0%, #ffffff 100%);
+
+  border: transparent;
+  border-radius: 10px 10px 10px 0;
+  -webkit-box-shadow: 3px 3px 14px -5px #737373;
+  -moz-box-shadow: 3px 3px 14px -5px #737373;
+  box-shadow: 3px 3px 14px -5px #737373;
+}
+
+#landing-right-btn button.active-btn {
+  transition: all 0.3s ease; /* add this line */
+
+  display: flex;
+  height: 70px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 3rem;
+  width: 60%;
+
+  /* background-color: rgb(255, 255, 255); */
+
+  background-color: white;
+  color: #a0e4ff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #83a9ba;
+  border-radius: 10px;
+
+  justify-content: center;
+}
+
+/* 
+You sent
+#FF4A9E - pink
+##1a0e0e  - deep brown
+#F7F7F7 - faded white */
+
+.carousel-circles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.circle.active {
+  background-color: #333;
+}
+
+/* ICONS CONTAINER --------------*/
+.landing-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.landing-icons img {
+  width: 2.5rem;
+}
+
+.landing-icons {
+  cursor: pointer;
+}
+
+#email {
+  position: absolute;
+  bottom: 70px;
+  left: 4.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #49c5f6;
+}
+
+.landing-crown {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+#landing-content {
+  position: absolute;
+  z-index: 2;
+  /* background-color: pink; */
+  width: 20rem;
+  height: 20rem;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.landingCrown {
+  width: 12rem;
+}
+
+/* ----------------------------*/
+
+@media screen and (max-width: 7687px) {
+  .landing-container {
+    background-size: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing-container {
+    background-size: 1000px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .landing-container {
+    background-size: 1000px;
+    background-position: center bottom;
+  }
+
+  #landing-name,
+  .landing-icons {
+    margin-left: 4.5rem;
+  }
+}
