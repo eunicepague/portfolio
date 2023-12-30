@@ -6,9 +6,9 @@ import Achievement from './components/Achievement/Achievement';
 import Services from './components/Services/services';
 import Proj from './components/Projects/Proj';
 
-import Cute from './components/Hero/Cute';
 import './App.css';
-import Experience from './components/About/Experience';
+import Certificate from './components/Certificate/Certificate';
+import Experience from './components/Experience/Experience';
 
 const App = () => {
   return (
@@ -17,6 +17,8 @@ const App = () => {
       <About />
       <Tech />
       <Experience />
+
+      <Certificate />
       <Achievement />
       {/* <Services /> */}
       {/* <Projects /> */}

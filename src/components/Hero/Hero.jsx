@@ -69,7 +69,11 @@ const Hero = () => {
             </div>
           </Col>
           <Col className="hero-right" sm={12} md={6} lg={6}>
-            <div id="landing-content" onMouseEnter={handleMouseEnter}>
+            <Col
+              id="landing-content"
+              className="d-none d-lg-block d-md-none d-sm-none"
+              onMouseEnter={handleMouseEnter}
+            >
               {isHovered && (
                 <img
                   className="landingCrown d-none d-md-flex"
@@ -91,7 +95,7 @@ const Hero = () => {
                 }}
                 onMouseLeave={handleMouseLeave}
               />
-            </div>
+            </Col>
 
             <div className="hero-img-container">
               <img src={Me} />

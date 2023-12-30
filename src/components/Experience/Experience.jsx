@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <Container fluid className="experience-container">
       <section id="experience-bg">
-        <Row>
+        <Row id="exp-row">
           <div id="experience-intro">
             <h1>Education & Experience</h1>
             <p>
