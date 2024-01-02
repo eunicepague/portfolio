@@ -9,13 +9,15 @@ import Proj from './components/Projects/Proj';
 import './App.css';
 import Certificate from './components/Certificate/Certificate';
 import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
     <>
       <Hero />
-      <About />
       <Tech />
+      <About />
+
       <Experience />
 
       <Certificate />
@@ -23,6 +25,7 @@ const App = () => {
       {/* <Services /> */}
       {/* <Projects /> */}
       <Proj />
+      <Footer />
     </>
   );
 };

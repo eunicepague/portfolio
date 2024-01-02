@@ -1,6 +1,7 @@
 // import React from 'react';
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Me from './../../assets/eunicepague.png';
 
 import Crown from './../../assets/crown.png';
@@ -62,9 +63,15 @@ const Hero = () => {
                 <button id="btn-1">
                   <p>Get Started</p>
                 </button>
+                {/* <a
+                  href="./Resume_EunicePague.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                > */}
                 <button id="btn-2">
                   <p>Download Resume</p>
                 </button>
+                {/* </a> */}
               </div>
             </div>
           </Col>

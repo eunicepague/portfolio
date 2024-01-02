@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  background-color: #191414;
+  font-family: 'Lato', sans-serif;
+  padding-top: 5rem 0;
+  color: white;
+}
+
+.footer-container p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+#first-row {
+  margin-bottom: 3.5rem;
+}
+
+.footer-content h1 {
+  font-weight: bold;
+}
+
+#footer-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer-btn button {
+  border-radius: 50px;
+  padding: 10px 40px;
+  background-color: #d73d57;
+  border-color: #d73d57;
+  color: white;
+}
+
+#footer-btn p {
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  padding: 0;
+  width: 60%;
+}
+
+.navbar a {
+  padding: 0;
+  color: white;
+}
+
+#footer-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+#third-row {
+  margin-top: 1.5rem;
+}
+
+#footer-copyright {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-logo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer-logo-container div {
+  display: flex;
+  gap: 10px;
+}
+
+#footer-logo-container img {
+  width: 2rem;
+  cursor: pointer;
+}
