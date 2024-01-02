@@ -11,8 +11,8 @@ const Proj = () => {
         <div className="proj-intro">
           <h1>Projects.</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro,
-            quos.
+            My recent projects showcase my evolving skills and commitment to
+            innovative tech solutions.
           </p>
         </div>
 

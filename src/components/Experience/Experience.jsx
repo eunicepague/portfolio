@@ -13,8 +13,8 @@ const Experience = () => {
           <div id="experience-intro">
             <h1>Education & Experience</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
-              impedit!
+              Building on my education and work history, I’m constantly evolving
+              in the tech industry.
             </p>
           </div>
           <Row className="vertical-lines-container">

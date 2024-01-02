@@ -44,6 +44,10 @@
   width: 30rem;
   display: flex;
   justify-content: center;
+
+  -webkit-box-shadow: 3px 3px 4.5px -0.5px #777777;
+  -moz-box-shadow: 3px 3px 4.5px -0.5px #777777;
+  box-shadow: 3px 3px 4.5px -0.5px #777777;
 }
 
 .proj-img-content {

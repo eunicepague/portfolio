@@ -71,7 +71,8 @@ const Certificate = () => {
         <div className="certificate-intro">
           <h1>My certificates.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel.
+            Equipped with numerous certificates, I bring validated expertise to
+            the evolving tech landscape.
           </p>
         </div>
 

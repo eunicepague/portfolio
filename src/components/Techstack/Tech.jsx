@@ -29,8 +29,8 @@ const tech = () => {
             <div className="techstack-intro">
               <h1>Tech Stacks.</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-                doloremque?
+                Continually refining my current tech stacks, embracing and
+                integrating emerging technological advancements.
               </p>
             </div>
 
