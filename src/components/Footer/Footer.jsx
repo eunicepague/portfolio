@@ -14,10 +14,10 @@ const Footer = () => {
     <Container fluid className="footer-container" id="footer">
       <section className="footer-content">
         <Row id="first-row">
-          <Col>
+          <Col sm={12} md={6} lg={6}>
             <h1>LET'S WORK TOGETHER</h1>
           </Col>
-          <Col id="footer-btn">
+          <Col id="footer-btn" sm={12} md={6} lg={6}>
             <a
               href="mailto:eunicegracepague@gmail.com"
               target="_blank"
@@ -30,7 +30,7 @@ const Footer = () => {
           </Col>
         </Row>
         <Row id="second-row">
-          <Col md={6} lg={6}>
+          <Col sm={12} md={6} lg={6}>
             <Nav className="navbar">
               <Nav.Item>
                 <Nav.Link href="#hero">Home</Nav.Link>
@@ -46,7 +46,7 @@ const Footer = () => {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col id="footer-contact" md={6} lg={6}>
+          <Col id="footer-contact" sm={12} md={6} lg={6}>
             <p>Phone: +639107888915</p>
             <p>Mail: eunicegracepague@gmail.com</p>
           </Col>
