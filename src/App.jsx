@@ -29,7 +29,7 @@ const App = () => {
       <Certificate />
       <Achievement />
 
-      {/* <Proj /> */}
+      <Proj />
       <Footer />
 
       {/* <Header />

@@ -63,7 +63,7 @@ const Experience = () => {
                 </Col>
                 <Col id="ex4">
                   <Slide direction="right">
-                    <div className="experience-box">
+                    <div className="experience-box" id="college">
                       <h5>Bachelors of Science in Computer Science Graduate</h5>
                       <p>October 2023</p>
                       <p>AMACC Makati</p>

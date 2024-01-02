@@ -103,6 +103,10 @@
   /* background-color: rgb(153, 166, 254); */
   background-color: rgb(226, 196, 205);
   min-width: 10%;
+
+  -webkit-box-shadow: 3px 3px 4.5px -0.5px #777777;
+  -moz-box-shadow: 3px 3px 4.5px -0.5px #777777;
+  box-shadow: 3px 3px 4.5px -0.5px #777777;
 }
 /* ------------ */
 
@@ -200,5 +204,11 @@
 
   .experience-box {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #college {
+    max-width: 60%;
   }
 }
