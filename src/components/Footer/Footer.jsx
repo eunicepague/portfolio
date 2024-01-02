@@ -30,8 +30,8 @@ const Footer = () => {
           </Col>
         </Row>
         <Row id="second-row">
-          <Col sm={12} md={6} lg={6}>
-            <Nav className="navbar">
+          <Col sm={4} md={6} lg={6}>
+            <Nav className="navbar" id="navbar-footer">
               <Nav.Item>
                 <Nav.Link href="#hero">Home</Nav.Link>
               </Nav.Item>
@@ -46,7 +46,7 @@ const Footer = () => {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col id="footer-contact" sm={12} md={6} lg={6}>
+          <Col id="footer-contact" sm={8} md={6} lg={6}>
             <p>Phone: +639107888915</p>
             <p>Mail: eunicegracepague@gmail.com</p>
           </Col>
