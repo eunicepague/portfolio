@@ -1,4 +1,3 @@
-// import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import './Proj.css';
 
@@ -7,7 +6,7 @@ import Proj2 from './../../assets/p2.png';
 
 const Proj = () => {
   return (
-    <Container fluid className="proj-container">
+    <Container fluid className="proj-container" id="project">
       <section className="proj-content">
         <div className="proj-intro">
           <h1>Projects.</h1>

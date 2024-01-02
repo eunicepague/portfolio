@@ -7,7 +7,7 @@ import Close from '././../../assets/close-quote.png';
 
 const About = () => {
   return (
-    <Container fluid className="about-container">
+    <Container fluid className="about-container" id="about">
       <section className="about-content">
         <Row>
           <Col className="about-left">

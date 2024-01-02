@@ -22,7 +22,7 @@ import PHP from './../../assets/php.png';
 
 const tech = () => {
   return (
-    <Container fluid className="techstack-container">
+    <Container fluid className="techstack-container" id="techstacks">
       <section className="techstack-content">
         <Row>
           <Col>

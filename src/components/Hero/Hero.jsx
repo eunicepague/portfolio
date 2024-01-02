@@ -48,7 +48,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <Container fluid className="hero-container">
+    <Container fluid className="hero-container" id="hero">
       <section className="hero-content">
         <Row>
           <Col className="hero-left" sm={12} md={6} lg={6}>
@@ -64,18 +64,20 @@ const Hero = () => {
                 quis animi!
               </p>
               <div className="hero-btn-container">
-                <button id="btn-1">
-                  <p>Get Started</p>
-                </button>
-                {/* <a
-                  href="./Resume_EunicePague.pdf"
+                <a href="#techstacks">
+                  <button id="btn-1">
+                    <p>Get Started</p>
+                  </button>
+                </a>
+                <a
+                  href="https://doc-0o-ao-prod-03-apps-viewer.googleusercontent.com/viewer2/prod-03/pdf/aqlgsnuqiq4uvvticket55e6rf18sbkm/0nd6ot5krg5nc8v04fhf20f9vhihjb8o/1704199950000/3/108871701221325884026/APznzaYxTY5cP1ueLcAr6yh7ie1jr5VpGtj6l7YEmRMgIx4Pl5M2W63PT_R-VQcYwy3HhEHoDebOp3dte7fswO89gF3v8o7U9SJNwNWvh0mGDIawEYul17VV34I8FHZm8XaZn01T1TLJ1EXOsU08aUgR05oKAphuceu0eQWMOplMfznx5dSm7c7lRinYmo7bTWkj5xlKLD2Lm7TVfiNhX6YSLacz7nhhbahCL8WNwU5iih87EHvx0L23vmU1e6W5ZWkPo8iP1sJSUC3wMFp4-hq2arzKMVvQ-fnamxLFHTPVhvRkjmBp3k_9L7dgd6JY9VSUkog9MYGFNU-LczJxtJs8p7bVVA97UI_T9mup3eqyx7ws0zWlk-Y-qArXg48zPhXpL9p68p_scKXVpN43EavM0XJ0U8XlbUvZe7RvJ4JpgGYBSef4s04=?authuser=0&nonce=nvit8pf1pl0n8&user=108871701221325884026&hash=lpp1jcjvou7lguj1obtp2gho6mct3oqh"
                   target="_blank"
                   rel="noopener noreferrer"
-                > */}
-                <button id="btn-2">
-                  <p>Download Resume</p>
-                </button>
-                {/* </a> */}
+                >
+                  <button id="btn-2">
+                    <p>Download Resume</p>
+                  </button>
+                </a>
               </div>
             </div>
           </Col>

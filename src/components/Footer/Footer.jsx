@@ -11,7 +11,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <Container fluid className="footer-container">
+    <Container fluid className="footer-container" id="footer">
       <section className="footer-content">
         <Row id="first-row">
           <Col>
@@ -30,15 +30,23 @@ const Footer = () => {
           </Col>
         </Row>
         <Row id="second-row">
-          <Col lg={7}>
+          <Col md={6} lg={6}>
             <Nav className="navbar">
-              <Nav.Link>HOME</Nav.Link>
-              <Nav.Link>ABOUT</Nav.Link>
-              <Nav.Link>PROJETS</Nav.Link>
-              <Nav.Link>CONTACT US</Nav.Link>
+              <Nav.Item>
+                <Nav.Link href="#hero">Home</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#about">About</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#project">Projects</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#footer">Contact Us</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Col>
-          <Col id="footer-contact" lg={5}>
+          <Col id="footer-contact" md={6} lg={6}>
             <p>Phone: +639107888915</p>
             <p>Mail: eunicegracepague@gmail.com</p>
           </Col>
