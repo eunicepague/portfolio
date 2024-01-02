@@ -52,6 +52,7 @@
 
 .about-right p {
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 .quote {
@@ -80,5 +81,21 @@
   .about-right h1 {
     text-align: center;
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-right p {
+    font-size: 1rem;
+  }
+  .quote {
+    width: 1rem;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-right p {
+    font-size: 0.7rem;
   }
 }
