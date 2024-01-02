@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+import { Fade } from 'react-awesome-reveal';
+
 import Me from './../../assets/eunicepague.png';
 import Crown from './../../assets/crown.png';
 import FB from './../../assets/fb.png';
@@ -53,32 +55,34 @@ const Hero = () => {
         <Row>
           <Col className="hero-left" sm={12} md={6} lg={6}>
             <div className="hero-intro">
-              <h4>FRONTEND DEVELOPER</h4>
-              <h1>
-                Hello,{' '}
-                <span style={{ color: '#d73d57' }}>I'm Eunice Pague!</span>
-              </h1>
-              <p className="mt-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-                facilis magnam pariatur sit non aperiam? Magni maiores eveniet
-                quis animi!
-              </p>
-              <div className="hero-btn-container">
-                <a href="#techstacks">
-                  <button id="btn-1">
-                    <p>Get Started</p>
-                  </button>
-                </a>
-                <a
-                  href="https://doc-0o-ao-prod-03-apps-viewer.googleusercontent.com/viewer2/prod-03/pdf/aqlgsnuqiq4uvvticket55e6rf18sbkm/0nd6ot5krg5nc8v04fhf20f9vhihjb8o/1704199950000/3/108871701221325884026/APznzaYxTY5cP1ueLcAr6yh7ie1jr5VpGtj6l7YEmRMgIx4Pl5M2W63PT_R-VQcYwy3HhEHoDebOp3dte7fswO89gF3v8o7U9SJNwNWvh0mGDIawEYul17VV34I8FHZm8XaZn01T1TLJ1EXOsU08aUgR05oKAphuceu0eQWMOplMfznx5dSm7c7lRinYmo7bTWkj5xlKLD2Lm7TVfiNhX6YSLacz7nhhbahCL8WNwU5iih87EHvx0L23vmU1e6W5ZWkPo8iP1sJSUC3wMFp4-hq2arzKMVvQ-fnamxLFHTPVhvRkjmBp3k_9L7dgd6JY9VSUkog9MYGFNU-LczJxtJs8p7bVVA97UI_T9mup3eqyx7ws0zWlk-Y-qArXg48zPhXpL9p68p_scKXVpN43EavM0XJ0U8XlbUvZe7RvJ4JpgGYBSef4s04=?authuser=0&nonce=nvit8pf1pl0n8&user=108871701221325884026&hash=lpp1jcjvou7lguj1obtp2gho6mct3oqh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button id="btn-2">
-                    <p>Download Resume</p>
-                  </button>
-                </a>
-              </div>
+              <Fade direction="left">
+                <h4>FRONTEND DEVELOPER</h4>
+                <h1>
+                  Hello,{' '}
+                  <span style={{ color: '#d73d57' }}>I'm Eunice Pague!</span>
+                </h1>
+                <p className="mt-3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iusto, facilis magnam pariatur sit non aperiam? Magni maiores
+                  eveniet quis animi!
+                </p>
+                <div className="hero-btn-container">
+                  <a href="#techstacks">
+                    <button id="btn-1">
+                      <p>Get Started</p>
+                    </button>
+                  </a>
+                  <a
+                    href="https://doc-0o-ao-prod-03-apps-viewer.googleusercontent.com/viewer2/prod-03/pdf/aqlgsnuqiq4uvvticket55e6rf18sbkm/0nd6ot5krg5nc8v04fhf20f9vhihjb8o/1704199950000/3/108871701221325884026/APznzaYxTY5cP1ueLcAr6yh7ie1jr5VpGtj6l7YEmRMgIx4Pl5M2W63PT_R-VQcYwy3HhEHoDebOp3dte7fswO89gF3v8o7U9SJNwNWvh0mGDIawEYul17VV34I8FHZm8XaZn01T1TLJ1EXOsU08aUgR05oKAphuceu0eQWMOplMfznx5dSm7c7lRinYmo7bTWkj5xlKLD2Lm7TVfiNhX6YSLacz7nhhbahCL8WNwU5iih87EHvx0L23vmU1e6W5ZWkPo8iP1sJSUC3wMFp4-hq2arzKMVvQ-fnamxLFHTPVhvRkjmBp3k_9L7dgd6JY9VSUkog9MYGFNU-LczJxtJs8p7bVVA97UI_T9mup3eqyx7ws0zWlk-Y-qArXg48zPhXpL9p68p_scKXVpN43EavM0XJ0U8XlbUvZe7RvJ4JpgGYBSef4s04=?authuser=0&nonce=nvit8pf1pl0n8&user=108871701221325884026&hash=lpp1jcjvou7lguj1obtp2gho6mct3oqh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button id="btn-2">
+                      <p>Download Resume</p>
+                    </button>
+                  </a>
+                </div>
+              </Fade>
             </div>
           </Col>
           <Col className="hero-right" sm={12} md={6} lg={6}>
@@ -115,24 +119,29 @@ const Hero = () => {
             </div>
 
             <div className="hero-icons-container">
-              <Link
-                to="https://www.linkedin.com/in/eunice-grace-pague-177324266/"
-                target="_blank"
-              >
-                <img src={Linkedin} />
-              </Link>
+              <Fade direction="right">
+                <Link
+                  to="https://www.linkedin.com/in/eunice-grace-pague-177324266/"
+                  target="_blank"
+                >
+                  <img src={Linkedin} />
+                </Link>
 
-              <Link to="https://www.facebook.com/eunice.pague" target="_blank">
-                <img src={FB} />
-              </Link>
+                <Link
+                  to="https://www.facebook.com/eunice.pague"
+                  target="_blank"
+                >
+                  <img src={FB} />
+                </Link>
 
-              <Link to="https://www.instagram.com/_mmcutie/" target="_blank">
-                <img src={Instagram} />
-              </Link>
+                <Link to="https://www.instagram.com/_mmcutie/" target="_blank">
+                  <img src={Instagram} />
+                </Link>
 
-              <Link to="https://github.com/eunicepague" target="_blank">
-                <img src={Github} />
-              </Link>
+                <Link to="https://github.com/eunicepague" target="_blank">
+                  <img src={Github} />
+                </Link>
+              </Fade>
             </div>
           </Col>
         </Row>

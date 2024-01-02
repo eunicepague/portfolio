@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col, Modal } from 'react-bootstrap';
+import { Fade } from 'react-awesome-reveal';
+
 import './Certificate.css';
 
 import Educ1 from './../../assets/Education/OJT.jpg';
@@ -74,14 +76,15 @@ const Certificate = () => {
         </div>
 
         <Col>
-          <div className="cert-img-container">
-            {(seeMore ? images : images.slice(0, numImagesDisplayed)).map(
-              (img, index) => (
-                <img key={index} src={img} onClick={() => handleShow(img)} />
-              )
-            )}
-          </div>
-
+          <Fade>
+            <div className="cert-img-container">
+              {(seeMore ? images : images.slice(0, numImagesDisplayed)).map(
+                (img, index) => (
+                  <img key={index} src={img} onClick={() => handleShow(img)} />
+                )
+              )}
+            </div>
+          </Fade>
           {!seeMore ? (
             <div className="cert-btn-container">
               <button onClick={handleSeeMore}>
