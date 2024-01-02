@@ -2,9 +2,13 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Me from './../../assets/eunicepague.png';
 
+import Me from './../../assets/eunicepague.png';
 import Crown from './../../assets/crown.png';
+import FB from './../../assets/fb.png';
+import Linkedin from './../../assets/linkedin.png';
+import Instagram from './../../assets/instagram.png';
+import Github from './../../assets/github.png';
 
 import './Hero.css';
 
@@ -106,6 +110,27 @@ const Hero = () => {
 
             <div className="hero-img-container">
               <img src={Me} />
+            </div>
+
+            <div className="hero-icons-container">
+              <Link
+                to="https://www.linkedin.com/in/eunice-grace-pague-177324266/"
+                target="_blank"
+              >
+                <img src={Linkedin} />
+              </Link>
+
+              <Link to="https://www.facebook.com/eunice.pague" target="_blank">
+                <img src={FB} />
+              </Link>
+
+              <Link to="https://www.instagram.com/_mmcutie/" target="_blank">
+                <img src={Instagram} />
+              </Link>
+
+              <Link to="https://github.com/eunicepague" target="_blank">
+                <img src={Github} />
+              </Link>
             </div>
           </Col>
         </Row>

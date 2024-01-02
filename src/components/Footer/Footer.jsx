@@ -31,12 +31,12 @@ const Footer = () => {
         </Row>
         <Row id="second-row">
           <Col lg={7}>
-            {/* <Nav className="navbar">
+            <Nav className="navbar">
               <Nav.Link>HOME</Nav.Link>
               <Nav.Link>ABOUT</Nav.Link>
               <Nav.Link>PROJETS</Nav.Link>
               <Nav.Link>CONTACT US</Nav.Link>
-            </Nav> */}
+            </Nav>
           </Col>
           <Col id="footer-contact" lg={5}>
             <p>Phone: +639107888915</p>

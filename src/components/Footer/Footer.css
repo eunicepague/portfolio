@@ -49,7 +49,7 @@
   font-weight: bold;
 }
 
-/* .navbar {
+.navbar {
   display: flex;
   padding: 0;
   width: 60%;
@@ -62,7 +62,7 @@
 
 .navbar a:hover {
   color: #d73d57;
-} */
+}
 
 #footer-contact {
   display: flex;

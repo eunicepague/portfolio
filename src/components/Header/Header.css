@@ -34,19 +34,46 @@
   color: #d73d57;
 }
 
-/* .header-container {
+/* -------------------- */
+
+.offcanvas-container {
   display: flex;
-  justify-content: center;
   width: 100%;
-  min-height: 3rem;
-  background-color: pink;
-}
-.header-content {
-  display: flex;
-  width: 90%;
+  font-family: 'Lato', sans-serif;
 }
 
-.header-nav {
+.offcanvas-content img {
+  margin: 1rem 1rem;
+  width: 2rem;
+}
+
+#offcanvas-logo img {
+  width: 70px;
+}
+
+#offcanvas-links {
   display: flex;
-  justify-content: space-between;
-} */
+  flex-direction: column;
+  /* margin-right: 3rem; */
+}
+
+#offcanvas-links a {
+  font-weight: bold;
+  color: #d73d57;
+}
+
+#offcanvas-icons-container {
+  display: flex;
+  gap: 10px;
+  margin-left: 1rem;
+}
+
+#offcanvas-icons-container img {
+  width: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .header-container {
+    display: none;
+  }
+}
