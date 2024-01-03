@@ -147,6 +147,10 @@
     /* width: 15rem; */
     width: 100%;
   }
+
+  .proj-img-content h3 {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 425px) {

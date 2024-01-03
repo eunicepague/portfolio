@@ -74,16 +74,16 @@ function Header() {
             <Offcanvas.Body>
               <Nav id="offcanvas-links" activeKey="/home">
                 <Nav.Item>
-                  <Nav.Link href="/home">Home</Nav.Link>
+                  <Nav.Link href="#hero">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href="/home">About</Nav.Link>
+                  <Nav.Link href="#about">About</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href="/home">Projects</Nav.Link>
+                  <Nav.Link href="#project">Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href="/home">Contact Us</Nav.Link>
+                  <Nav.Link href="#footer">Contact Us</Nav.Link>
                 </Nav.Item>
               </Nav>
 
