@@ -3,6 +3,7 @@ import './Proj.css';
 
 import Proj1 from './../../assets/p1.png';
 import Proj2 from './../../assets/p2.png';
+import Proj3 from './../../assets/p3.png';
 
 const Proj = () => {
   return (
@@ -85,6 +86,46 @@ const Proj = () => {
                 <button>CSS</button>
                 <button>Bootstrap</button>
                 <button>JS</button>
+              </div>
+              <div>
+                <button id="project-button">
+                  View Me
+                  <div className="arrow-wrapper">
+                    <div className="arrow"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </Col>
+        </Row>
+
+        <Row className="project-container">
+          <Col className="proj-img" md={12} lg={6}>
+            <img src={Proj3} />
+          </Col>
+          <Col className="proj-img-content" md={12} lg={6}>
+            <div>
+              <h3>How To Bake It</h3>
+              <p className="mt-4">
+                “How to Cake It” is a recipe blog website that I’ve developed
+                using ReactJS. It’s integrated with a mock-up API that I created
+                myself. This platform has been instrumental in honing my skills
+                in API fetching. Although it’s still under development, I’ve
+                made significant strides in mastering the intricacies of API
+                integration. Stay tuned for more updates as I continue to
+                enhance its features and functionalities.
+              </p>
+            </div>
+
+            <div className="proj-btn-content">
+              <div className="skill-set">
+                <p>Skill set: </p>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>Bootstrap</button>
+                <button>JS</button>
+                <button>ReactJs</button>
+                <button>NodeJs</button>
               </div>
               <div>
                 <button id="project-button">
