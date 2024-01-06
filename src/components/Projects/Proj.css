@@ -160,3 +160,15 @@
     justify-content: center;
   }
 }
+
+/* -----------LINK------------- */
+
+.proj-btn-content a {
+  color: inherit; /* Changes the link color to the color of the parent element */
+  text-decoration: none; /* Removes the underline */
+}
+
+.proj-btn-content a:hover {
+  color: inherit; /* Keeps the link color the same even when hovered */
+  text-decoration: none; /* Keeps the underline removed even when hovered */
+}

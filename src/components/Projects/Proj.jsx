@@ -1,6 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import './Proj.css';
 
+import { Link } from 'react-router-dom';
+
 import Proj1 from './../../assets/p1.png';
 import Proj2 from './../../assets/p2.png';
 import Proj3 from './../../assets/p3.png';
@@ -47,12 +49,14 @@ const Proj = () => {
                 <button>Laravel</button>
               </div>
               <div>
-                <button id="project-button">
-                  View Me
-                  <div className="arrow-wrapper">
-                    <div className="arrow"></div>
-                  </div>
-                </button>
+                <Link to="https://the-ordinary.vercel.app">
+                  <button id="project-button">
+                    View Me
+                    <div className="arrow-wrapper">
+                      <div className="arrow"></div>
+                    </div>
+                  </button>
+                </Link>
               </div>
             </div>
           </Col>
@@ -88,12 +92,14 @@ const Proj = () => {
                 <button>JS</button>
               </div>
               <div>
-                <button id="project-button">
-                  View Me
-                  <div className="arrow-wrapper">
-                    <div className="arrow"></div>
-                  </div>
-                </button>
+                <Link to="https://the-ordinary.vercel.app">
+                  <button id="project-button">
+                    View Me
+                    <div className="arrow-wrapper">
+                      <div className="arrow"></div>
+                    </div>
+                  </button>
+                </Link>
               </div>
             </div>
           </Col>
@@ -107,7 +113,7 @@ const Proj = () => {
             <div>
               <h3>How To Bake It</h3>
               <p className="mt-4">
-                “How to Cake It” is a recipe blog website that I’ve developed
+                “How to Bake It” is a recipe blog website that I’ve developed
                 using ReactJS. It’s integrated with a mock-up API that I created
                 myself. This platform has been instrumental in honing my skills
                 in API fetching. Although it’s still under development, I’ve
@@ -128,12 +134,14 @@ const Proj = () => {
                 <button>NodeJs</button>
               </div>
               <div>
-                <button id="project-button">
-                  View Me
-                  <div className="arrow-wrapper">
-                    <div className="arrow"></div>
-                  </div>
-                </button>
+                <Link to="https://how-to-bake-it-recipes.vercel.app">
+                  <button id="project-button">
+                    View Me
+                    <div className="arrow-wrapper">
+                      <div className="arrow"></div>
+                    </div>
+                  </button>
+                </Link>
               </div>
             </div>
           </Col>
