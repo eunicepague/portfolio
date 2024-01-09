@@ -113,13 +113,21 @@ const Proj = () => {
             <div>
               <h3>How To Bake It</h3>
               <p className="mt-4">
-                “How to Bake It” is a recipe blog website that I’ve developed
-                using ReactJS. It’s integrated with a mock-up API that I created
-                myself. This platform has been instrumental in honing my skills
-                in API fetching. Although it’s still under development, I’ve
-                made significant strides in mastering the intricacies of API
-                integration. Stay tuned for more updates as I continue to
-                enhance its features and functionalities.
+                “How to Bake It” is a recipe blog website that I’ve been
+                developing using ReactJS and PHP Laravel. This project is
+                integrated with a mock-up RESTful API, which I have designed and
+                implemented from scratch. This hands-on experience has been
+                pivotal in my journey towards mastering API implementation,
+                particularly RESTful APIs, and enhancing my proficiency in PHP
+                Laravel. Despite the project still being under development, I
+                have made substantial progress in comprehending the subtleties
+                of working with RESTful APIs and implementing them using PHP
+                Laravel. As I persistently refine the features and
+                functionalities of this platform, I am continually learning and
+                adopting best practices in API design and usage. Stay tuned for
+                more updates as I persist in my endeavor to further my expertise
+                in RESTful API implementation and PHP Laravel through this
+                project
               </p>
             </div>
 
@@ -132,6 +140,8 @@ const Proj = () => {
                 <button>JS</button>
                 <button>ReactJs</button>
                 <button>NodeJs</button>
+                <button>PHP</button>
+                <button>Laravel</button>
               </div>
               <div>
                 <Link to="https://how-to-bake-it-recipes.vercel.app">
