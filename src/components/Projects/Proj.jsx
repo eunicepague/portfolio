@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Proj1 from './../../assets/p1.png';
 import Proj2 from './../../assets/p2.png';
 import Proj3 from './../../assets/p3.png';
+import Proj4 from './../../assets/p4.png';
 
 const Proj = () => {
   return (
@@ -145,6 +146,51 @@ const Proj = () => {
               </div>
               <div>
                 <Link to="https://how-to-bake-it-recipes.vercel.app">
+                  <button id="project-button">
+                    View Me
+                    <div className="arrow-wrapper">
+                      <div className="arrow"></div>
+                    </div>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </Col>
+        </Row>
+
+        <Row className="project-container">
+          <Col className="proj-img" md={12} lg={6}>
+            <img src={Proj4} />
+          </Col>
+          <Col className="proj-img-content" md={12} lg={6}>
+            <div>
+              <h3>My To-Do-List Webiste</h3>
+              <p className="mt-4">
+                The To-Do-List website is a single-page application designed to
+                help users manage their tasks efficiently. It serves as a
+                personal digital checklist, simplifying life and promoting
+                organization. The frontend of the website is built with ReactJS,
+                ensuring a dynamic user interface. The backend operations are
+                handled by NodeJS, providing robust data management. The
+                website’s design is enhanced with vanilla SCSS, offering a clean
+                and user-friendly experience. A mock-up json-server is
+                implemented for data storage, and Restful APIs are used for data
+                manipulation. This project has been a significant learning
+                experience, particularly in the application of Restful APIs.
+              </p>
+            </div>
+
+            <div className="proj-btn-content">
+              <div className="skill-set">
+                <p>Skill set: </p>
+                <button>HTML</button>
+                <button>Vanilla SASS</button>
+                <button>JS</button>
+                <button>ReactJs</button>
+                <button>NodeJs</button>
+              </div>
+              <div>
+                <Link to="https://my-own-to-do-list.vercel.app">
                   <button id="project-button">
                     View Me
                     <div className="arrow-wrapper">
