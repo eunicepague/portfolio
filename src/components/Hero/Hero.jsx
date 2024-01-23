@@ -62,9 +62,11 @@ const Hero = () => {
                   <span style={{ color: '#d73d57' }}>I'm Eunice Pague!</span>
                 </h1>
                 <p className="mt-3">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto, facilis magnam pariatur sit non aperiam? Magni maiores
-                  eveniet quis animi!
+                  Hello! I’m Eunice Grace Pague, a Magna Cum Laude Computer
+                  Science geek with a passion for coding, art, and gaming. I’m
+                  on the lookout for a web development role where I can bring my
+                  enthusiasm, creativity, and love for learning to the company
+                  that provides growth and innovation.
                 </p>
                 <div className="hero-btn-container">
                   <a href="#techstacks">
