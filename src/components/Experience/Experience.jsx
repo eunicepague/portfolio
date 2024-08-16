@@ -23,7 +23,7 @@ const Experience = () => {
                 <Col id="ex1">
                   <Slide direction="left">
                     <div className="experience-box">
-                      <h5>Full Stack Web Dev Graduate</h5>
+                      <h5 style={{fontWeight:'bold'}}>Full Stack Web Dev Graduate</h5>
                       <p>Nov 2023</p>
                       <p>KodeGo Bootcamp</p>
                     </div>
@@ -32,7 +32,7 @@ const Experience = () => {
                 <Col id="ex2">
                   <Slide direction="left">
                     <div className="experience-box">
-                      <h5>FrontEnd Developer Intern</h5>
+                      <h5 style={{fontWeight:'bold'}}>FrontEnd Developer Intern</h5>
                       <p>February 2023 - April 2023</p>
                       <p>Highly Succeed Inc.</p>
                     </div>
@@ -56,15 +56,16 @@ const Experience = () => {
                 <Col id="ex3">
                   <Slide direction="right">
                     <div className="experience-box">
-                      <h5>Building Portfolios</h5>
-                      <p>Current</p>
+                      <h5 style={{fontWeight:'bold'}}>MS Engineer</h5>
+                      <p>April 2024 - Current</p>
+                      <p>MDC</p>
                     </div>
                   </Slide>
                 </Col>
                 <Col id="ex4">
                   <Slide direction="right">
                     <div className="experience-box" id="college">
-                      <h5>Bachelors of Science in Computer Science Graduate</h5>
+                      <h5 style={{fontWeight:'bold'}}>Bachelors of Science in Computer Science Graduate</h5>
                       <p>October 2023</p>
                       <p>AMACC Makati</p>
                     </div>
@@ -73,7 +74,7 @@ const Experience = () => {
                 <Col id="ex5">
                   <Slide direction="right">
                     <div className="experience-box">
-                      <h5>ICT strand Graduate</h5>
+                      <h5 style={{fontWeight:'bold'}}>ICT strand Graduate</h5>
                       <p>April 2019</p>
                       <p>Informatics College Northgate</p>
                     </div>
