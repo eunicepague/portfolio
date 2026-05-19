@@ -1,42 +1,75 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import './About.css';
-import { Fade } from 'react-awesome-reveal';
+import { Container } from "react-bootstrap";
+import { Fade } from "react-awesome-reveal";
 
-import Me from './../../assets/feb23.jpeg';
-import Open from '././../../assets/open-quote.png';
-import Close from '././../../assets/close-quote.png';
+import "./About.css";
+import Me from "./../../assets/feb23.jpeg";
 
 const About = () => {
   return (
     <Container fluid className="about-container" id="about">
       <section className="about-content">
-        <Row>
-          <Col className="about-left">
-            <img src={Me} />
-          </Col>
-          <Col className="about-right" lg={8}>
-            <Fade>
-              <h1>About me</h1>
+        <div className="about-left">
+          <div className="about-img-bg"></div>
 
-              <p>
-                <img src={Open} className="quote" />
-                I am a Computer Science fresh graduate focused on web
-                development, with a magna cum laude distinction and a track
-                record of academic excellence. I have a passion for coding,
-                gaming, and exploring new programming languages in my free time.
-                I have also completed several web development projects that
-                demonstrate my skills and creativity. As an aspiring front-end
-                developer, I find joy in merging art and technology, seamlessly
-                weaving creativity into code to construct visually captivating
-                and user-friendly digital experiences, which I believe adds
-                value to my web design and user interface. I’m currently looking
-                for new opportunities in web development where I can apply my
-                skills and learn new things.
-                <img src={Close} className="quote" />
-              </p>
-            </Fade>
-          </Col>
-        </Row>
+          <div className="about-img-wrapper">
+            <img src={Me} alt="Eunice Pague" />
+          </div>
+
+          <div className="about-profile-card">
+            <div className="about-profile-icon">💻</div>
+            <div>
+              <h4>Software Developer</h4>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-right">
+          <Fade triggerOnce>
+            <p className="about-label">♥ Get to know me</p>
+
+            <h1>
+              About <span>Me</span>
+            </h1>
+
+            <p className="about-main-text">
+              I’m a Computer Science graduate, Magna Cum Laude, with a strong
+              focus on web development and a passion for creating clean,
+              user-friendly digital experiences.
+            </p>
+
+            <p className="about-description">
+              I worked as a Software Developer at Fujitsu Engineering Technology
+              Ph from January 2026 to April 2026, and as an MS Engineer from
+              April 2024 to August 2025. These experiences helped me improve my
+              technical skills, problem-solving mindset, and ability to build
+              practical solutions.
+            </p>
+
+            <p className="about-description">
+              I enjoy turning ideas into functional and beautiful websites. Some
+              of the projects I’m proud of include TrekTok Travel Management
+              System, The Ordinary Website, The Good Shepherd Sweets, and How To
+              Bake It.
+            </p>
+
+            <p className="about-description">
+              I love coding, continuous learning, and the challenge of building
+              solutions that make a difference. I’m excited to bring my skills,
+              creativity, and dedication to a team where I can grow and make an
+              impact as a developer.
+            </p>
+
+            <div className="about-btn">
+              <a href="#footer" className="about-primary-btn">
+                Let’s Connect <span>→</span>
+              </a>
+
+              <a href="#project" className="about-secondary-btn">
+                View Projects <span>→</span>
+              </a>
+            </div>
+          </Fade>
+        </div>
       </section>
     </Container>
   );

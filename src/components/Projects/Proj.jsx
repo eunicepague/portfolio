@@ -1,207 +1,142 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import './Proj.css';
+import { Container } from "react-bootstrap";
+import "./Proj.css";
 
-import { Link } from 'react-router-dom';
-
-import Proj1 from './../../assets/p1.png';
-import Proj2 from './../../assets/p2.png';
-import Proj3 from './../../assets/p3.png';
-import Proj4 from './../../assets/p4.png';
+import Proj1 from "./../../assets/p1.png";
+import Proj2 from "./../../assets/p2.png";
+import Proj3 from "./../../assets/p3.png";
+import TrekTok from "./../../assets/TrekTok.png";
 
 const Proj = () => {
+  const projects = [
+    {
+      number: "01",
+      image: TrekTok,
+      icon: "✈️",
+      title: "TrekTok Travel Management System",
+      description:
+        "A Spring MVC and MyBatis-based tour and travel management system with user registration, email verification, login, booking, payment, feedback, and admin management features. This project helped me practice full-stack development, database integration, and role-based access control.",
+      skills: [
+        "Java",
+        "Spring MVC",
+        "MyBatis",
+        "PostgreSQL",
+        "JSP",
+        "Bootstrap",
+      ],
+      link: "#",
+    },
+    {
+      number: "02",
+      image: Proj1,
+      icon: "🌐",
+      title: "The Ordinary Website",
+      description:
+        "A clean and modern e-commerce website built to showcase The Ordinary products and information. Focused on product clarity, simple layout, and a smooth browsing experience.",
+      skills: [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JS",
+        "ReactJs",
+        "NodeJs",
+        "PHP",
+        "Laravel",
+      ],
+      link: "https://trektok.onrender.com/home",
+    },
+    {
+      number: "03",
+      image: Proj2,
+      icon: "🧁",
+      title: "The Good Shepherd Sweets",
+      description:
+        "An interactive cake shop website with a delightful UI/UX. It includes a dynamic product catalog, order form, and smooth user interactions for a seamless browsing and ordering experience.",
+      skills: ["HTML", "CSS", "Bootstrap", "JS"],
+      link: "https://the-ordinary.vercel.app",
+    },
+    {
+      number: "04",
+      image: Proj3,
+      icon: "👩‍🍳",
+      title: "How To Bake It",
+      description:
+        "A recipe blog website featuring a collection of baked good recipes. Integrated with a RESTful API for dynamic content management, offering a rich and engaging user experience.",
+      skills: [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JS",
+        "ReactJs",
+        "NodeJs",
+        "PHP",
+        "Laravel",
+      ],
+      link: "https://how-to-bake-it-recipes.vercel.app",
+    },
+  ];
+
   return (
     <Container fluid className="proj-container" id="project">
       <section className="proj-content">
         <div className="proj-intro">
-          <h1>Projects.</h1>
-          <p>
-            My recent projects showcase my evolving skills and commitment to
-            innovative tech solutions.
+          <p className="proj-label">✦ Portfolio ✦</p>
+          <h1>
+            My <span>Projects.</span>
+          </h1>
+          <p className="proj-subtitle">
+            A selection of my recent work that reflects my skills, creativity,
+            and commitment to building meaningful digital experiences.
           </p>
         </div>
 
-        <Row className="project-container">
-          <Col className="proj-img" md={12} lg={6}>
-            <img src={Proj1} />
-          </Col>
-          <Col className="proj-img-content" md={12} lg={6}>
-            <div>
-              <h3>The Ordinary Website</h3>
-              <p className="mt-4">
-                Using The Ordinary as our quality standard, we developed a
-                website that showcases their products and data. This project
-                served as a practical tool for refining our web development
-                skills, mirroring The Ordinary’s professionalism. We’re eager to
-                apply the enhanced skills from this enriching experience to
-                future projects.
-              </p>
-            </div>
+        <div className="projects-list">
+          {projects.map((project) => (
+            <div className="project-card" key={project.number}>
+              <div className="project-number">
+                <span>✦</span>
+                {project.number}
+              </div>
 
-            <div className="proj-btn-content">
-              <div className="skill-set">
-                <p>Skill set: </p>
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>Bootstrap</button>
-                <button>JS</button>
-                <button>ReactJs</button>
-                <button>NodeJs</button>
-                <button>PHP</button>
-                <button>Laravel</button>
+              <div className="project-image-wrapper">
+                <img src={project.image} alt={project.title} />
               </div>
-              <div>
-                <Link to="https://the-ordinary.vercel.app">
-                  <button id="project-button">
-                    View Me
-                    <div className="arrow-wrapper">
-                      <div className="arrow"></div>
-                    </div>
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </Col>
-        </Row>
 
-        <Row className="project-container">
-          <Col className="proj-img" md={12} lg={6}>
-            <img src={Proj2} />
-          </Col>
-          <Col className="proj-img-content" md={12} lg={6}>
-            <div>
-              <h3>The Good Shepherd Sweets</h3>
-              <p className="mt-4">
-                My first web development project, a delightful cake shop
-                website. This website is a mock-up of a cake shop that I
-                single-handedly developed using HTML, CSS, and JavaScript. It
-                showcases my skills in front-end web development and my passion
-                for creating user-friendly interfaces. The website features a
-                variety of cakes and pastries, each with its own detailed
-                product page. It also includes an interactive order form,
-                allowing customers to place orders directly from the website.
-                This project was a wonderful learning experience and a
-                significant step in my journey as a web developer
-              </p>
-            </div>
+              <div className="project-divider"></div>
 
-            <div className="proj-btn-content">
-              <div className="skill-set">
-                <p>Skill set: </p>
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>Bootstrap</button>
-                <button>JS</button>
-              </div>
-              <div>
-                <Link to="https://the-ordinary.vercel.app">
-                  <button id="project-button">
-                    View Me
-                    <div className="arrow-wrapper">
-                      <div className="arrow"></div>
-                    </div>
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </Col>
-        </Row>
+              <div className="project-details">
+                <div className="project-title-row">
+                  <div className="project-icon">{project.icon}</div>
+                  <h3>{project.title}</h3>
+                </div>
 
-        <Row className="project-container">
-          <Col className="proj-img" md={12} lg={6}>
-            <img src={Proj3} />
-          </Col>
-          <Col className="proj-img-content" md={12} lg={6}>
-            <div>
-              <h3>How To Bake It</h3>
-              <p className="mt-4">
-                “How to Bake It” is a recipe blog website that I’ve been
-                developing using ReactJS and PHP Laravel. This project is
-                integrated with a mock-up RESTful API, which I have designed and
-                implemented from scratch. This hands-on experience has been
-                pivotal in my journey towards mastering API implementation,
-                particularly RESTful APIs, and enhancing my proficiency in PHP
-                Laravel. Despite the project still being under development, I
-                have made substantial progress in comprehending the subtleties
-                of working with RESTful APIs and implementing them using PHP
-                Laravel. As I persistently refine the features and
-                functionalities of this platform, I am continually learning and
-                adopting best practices in API design and usage. Stay tuned for
-                more updates as I persist in my endeavor to further my expertise
-                in RESTful API implementation and PHP Laravel through this
-                project
-              </p>
-            </div>
+                <p className="project-description">{project.description}</p>
 
-            <div className="proj-btn-content">
-              <div className="skill-set">
-                <p>Skill set: </p>
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>Bootstrap</button>
-                <button>JS</button>
-                <button>ReactJs</button>
-                <button>NodeJs</button>
-                <button>PHP</button>
-                <button>Laravel</button>
-              </div>
-              <div>
-                <Link to="https://how-to-bake-it-recipes.vercel.app">
-                  <button id="project-button">
-                    View Me
-                    <div className="arrow-wrapper">
-                      <div className="arrow"></div>
-                    </div>
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </Col>
-        </Row>
+                <div className="project-line"></div>
 
-        <Row className="project-container">
-          <Col className="proj-img" md={12} lg={6}>
-            <img src={Proj4} />
-          </Col>
-          <Col className="proj-img-content" md={12} lg={6}>
-            <div>
-              <h3>My To-Do-List Webiste</h3>
-              <p className="mt-4">
-                The To-Do-List website is a single-page application designed to
-                help users manage their tasks efficiently. It serves as a
-                personal digital checklist, simplifying life and promoting
-                organization. The frontend of the website is built with ReactJS,
-                ensuring a dynamic user interface. The backend operations are
-                handled by NodeJS, providing robust data management. The
-                website’s design is enhanced with vanilla SCSS, offering a clean
-                and user-friendly experience. A mock-up json-server is
-                implemented for data storage, and Restful APIs are used for data
-                manipulation. This project has been a significant learning
-                experience, particularly in the application of Restful APIs.
-              </p>
-            </div>
+                <p className="tech-label">Tech Stack</p>
 
-            <div className="proj-btn-content">
-              <div className="skill-set">
-                <p>Skill set: </p>
-                <button>HTML</button>
-                <button>Vanilla SASS</button>
-                <button>JS</button>
-                <button>ReactJs</button>
-                <button>NodeJs</button>
+                <div className="skill-set">
+                  {project.skills.map((skill) => (
+                    <span key={skill}>{skill}</span>
+                  ))}
+                </div>
               </div>
-              <div>
-                <Link to="https://my-own-to-do-list.vercel.app">
-                  <button id="project-button">
-                    View Me
-                    <div className="arrow-wrapper">
-                      <div className="arrow"></div>
-                    </div>
-                  </button>
-                </Link>
+
+              <div className="project-action">
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  View Project <span>→</span>
+                </a>
               </div>
             </div>
-          </Col>
-        </Row>
+          ))}
+        </div>
+
+        <div className="project-connect">
+          <span>✦</span>
+          <p>Interested in working together?</p>
+          <a href="#contact">Let’s Connect!</a>
+          <span>→</span>
+        </div>
       </section>
     </Container>
   );

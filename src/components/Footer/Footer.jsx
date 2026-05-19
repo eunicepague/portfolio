@@ -1,101 +1,103 @@
-// import React from 'react';
+import { Container, Nav } from "react-bootstrap";
 
-import { Container, Row, Col, Nav } from 'react-bootstrap';
+import Linkedin from "./../../assets/linkedin-cl.png";
+import Facebook from "./../../assets/fb-cl.png";
+import Instagram from "./../../assets/instagram-cl.png";
+import Github from "./../../assets/github-cl.png";
 
-import Linkedin from './../../assets/linkedin-cl.png';
-import Facebook from './../../assets/fb-cl.png';
-import Instagram from './../../assets/instagram-cl.png';
-import Github from './../../assets/github-cl.png';
-
-import './Footer.css';
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <Container fluid className="footer-container" id="footer">
-      <section className="footer-content">
-        <Row id="first-row">
-          <Col sm={12} md={6} lg={6}>
-            <h1>LET'S WORK TOGETHER</h1>
-          </Col>
-          <Col id="footer-btn" sm={12} md={6} lg={6}>
-            <a
-              href="mailto:eunicegracepague@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>
-                <p>Let's talk</p>
-              </button>
-            </a>
-          </Col>
-        </Row>
-        <Row id="second-row">
-          <Col sm={4} md={6} lg={6}>
-            <Nav className="navbar" id="navbar-footer">
-              <Nav.Item>
-                <Nav.Link href="#hero">Home</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#about">About</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#project">Projects</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#footer">Contact Us</Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Col>
-          <Col id="footer-contact" sm={8} md={6} lg={6}>
-            <p>Phone: +639107888915</p>
-            <p>Mail: eunicegracepague@gmail.com</p>
-          </Col>
-        </Row>
-        <hr></hr>
+    <footer className="footer-container" id="footer">
+      <Container className="footer-content">
+        <div className="footer-main">
+          <div className="footer-brand">
+            {/* <div className="footer-monogram">EP</div> */}
 
-        <Row id="third-row">
-          <Col>
-            <p>Eunice Pague</p>
-          </Col>
-          <Col id="footer-copyright">
-            <p> Copyright &copy; 2024 Eunice Pague. All rights reserved</p>
-          </Col>
-          <Col id="footer-logo-container">
-            <div>
+            <h2>Eunice Pague</h2>
+            <p className="footer-role">Software Developer</p>
+            {/* <p className="footer-desc">
+              I craft beautiful, functional, and user-centered digital
+              experiences.
+            </p> */}
+          </div>
+
+          <div className="footer-column">
+            <h4>Navigation</h4>
+
+            <Nav className="footer-nav">
+              <Nav.Link href="#hero">Home</Nav.Link>
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#project">Projects</Nav.Link>
+              <Nav.Link href="#footer">Contact</Nav.Link>
+            </Nav>
+          </div>
+
+          <div className="footer-column footer-contact">
+            <h4>Contact</h4>
+
+            <div className="footer-contact-item">
+              <span>Phone</span>
+              <a href="tel:+639107888915">+639107888915</a>
+            </div>
+
+            <div className="footer-contact-item">
+              <span>Email</span>
+              <a href="mailto:eunicegracepague@gmail.com">
+                eunicegracepague@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div className="footer-column footer-social">
+            <h4>Connect</h4>
+
+            <div className="footer-logo-container">
               <a
                 href="https://www.linkedin.com/in/eunice-grace-pague-177324266/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
-                <img src={Linkedin} />
+                <img src={Linkedin} alt="LinkedIn" />
               </a>
 
               <a
                 href="https://www.facebook.com/eunice.pague"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Facebook"
               >
-                <img src={Facebook} />
+                <img src={Facebook} alt="Facebook" />
               </a>
+
               <a
                 href="https://www.instagram.com/_mmcutie/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
               >
-                <img src={Instagram} />
+                <img src={Instagram} alt="Instagram" />
               </a>
+
               <a
                 href="https://github.com/eunicepague"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <img src={Github} />
+                <img src={Github} alt="GitHub" />
               </a>
             </div>
-          </Col>
-        </Row>
-      </section>
-    </Container>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>Copyright &copy; 2026 Eunice Pague. All rights reserved.</p>
+        </div>
+      </Container>
+    </footer>
   );
 };
 
